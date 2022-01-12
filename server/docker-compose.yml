@@ -25,7 +25,8 @@ services:
       - websocket
       - api
   rethinkdb:
-    image: rethinkdb:2.3
+    image: rethinkdb:latest
+    platform: linux/amd64
     restart: unless-stopped
     ports:
       - 8080:8080
